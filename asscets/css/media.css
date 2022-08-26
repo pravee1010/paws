@@ -1,0 +1,74 @@
+/* mobile */
+@media(max-width:768px){
+    .banner{
+        display: none;
+    }
+    .mobileBanner{
+        display: block;
+    }
+    .mobileBanner>header{
+        background: skyblue;
+        background: -webkit-linear-gradient(to right,rgb(72, 177, 191,0.5),#06beb6);
+        background: linear-gradient(to right,rgba(72, 177, 191,0.5),#06beb6);
+        padding: 20px;
+    }
+    .mobileBanner>header>nav{
+        text-align:center;
+
+    }
+    .mobileBanner>header>nav>ul{
+        list-style: none;
+    }
+    .mobileBanner>header>nav>ul>li{
+        padding: 20px;
+    }
+    .mobileBanner>header>nav>ul>li>a{
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+    }
+    .mobileBanner>header>nav>ul>li>a::after{
+        content: "";/* this is the imp keyword of using after/before  */
+        display: block;
+        height: 3px;
+        width: 0px;
+        background: #c4c4f7;
+        transition: all 0.5s;
+    }
+    .mobileBanner>header>nav>ul>li:hover ::after{
+        color: grey;
+        width: 100%;
+    }
+    .mobileBanner>header>nav>img{
+        height: 50px;
+    }
+    .mobileBanner{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),url(../images/byke.jpg)no-repeat top;
+        height: 500px;
+        background-size: 100%;
+        padding: 20px;
+    }
+    .mobileBanner>section>h1{
+        text-align: center;
+        margin: 50px;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 5px 5px 4px #06beb6;
+        text-transform: uppercase;
+    }
+}
+
+/* #tab */
+
+    @media(min-width:768px)and (max-width:1200px){
+        .mobileBanner{
+        display: none;
+     }
+    .banner{
+        background: linear-gradient(to bottom,rgba(57,98,165,1),rgba(4, 222, 255,1)),url(../images/dog.jpg)no-repeat center;
+        height: 800px;
+        background-size: 100%;
+        padding: 20px;
+    
+     }
+}

@@ -1,0 +1,315 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100%;background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(../images/lap.jpg)no-repeat center;
+    background-size: cover;
+}
+header>nav{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2% 6%;
+}
+header>nav>h2{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+}
+header>nav>h2::first-letter{
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header>nav>ul{
+    list-style: none;
+    float: right;
+    margin: 1rem 0;
+}
+header>nav>ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+header>nav .fa-solid{
+    display: none;
+}
+header>nav>ul .fa-solid{
+    display: none;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+header>nav>ul>li>a::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0px;
+    margin: auto;
+    background: #155db0;
+    transition: all 0.5s;
+}
+header>nav>ul>li:hover a::after{
+    width: 100%;
+}
+.text-box{
+    margin: 5% 20%;
+    text-align: center;
+    color: #fff;
+}
+.text-box>h1{
+    font-size: 55px;
+}
+.text-box>p{
+    margin: 20px 0px 30px;
+    font-size: 15px;
+}
+.text-box>a{
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #0c0d0d;
+    font-weight: 600;
+}
+.text-box>a:hover{
+    color: #fff;
+    background-color: #060607;
+}
+.container{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    padding: 30px 20px 20px;
+}
+.container>h1{  
+    color: #155db0;
+    margin: 0px 0px 10px;
+}
+.container>h1::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 50px;
+    margin: 5px auto 0px;
+    background: #155db0;
+    border-radius: 5px;
+}
+.container>p{
+    margin: 2% 15%;
+}
+.container>a{
+    border: 2px solid #155db0;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 12%;
+    color: #155db0;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 44%;
+    border-radius: 50em;
+}
+.container>a:hover{
+    color: #fff;
+    background-color: #155db0;
+}
+.container1{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.box1, .box3{
+    padding: 10px 30px 40px;
+    background-color: #155db0;
+    color: #fff;
+}
+.box2{
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+}
+.fa-solid{
+    font-size: 40px;
+    margin: 20px 0px 0px;
+}
+.container1 .common>h2{
+    margin: 20px;
+}
+.service{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    padding: 4%;
+}
+.service .text_Service>h1{
+    color: #155db0;
+    padding: 0px 0px 10px;
+}
+.service .text_Service>h1::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 40px;
+    margin: 5px auto 0px;
+    background: #155db0;
+    border-radius: 5px;
+}
+.service .text_Service>p{
+    padding: 2% 20% 3%;
+}
+.service .service_icon{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+.service .service_icon .font{
+    background-color: #ddd;
+    margin: 20px;
+    position: relative;
+    padding: 20px;
+    height: 60px;
+}
+.service .service_icon .fa-solid, .fa-brands{
+    font-size: 2rem;
+    position: absolute;
+    left: 0%;
+    top: -30%;
+    padding: 10px;
+    color: #155db0;
+    border: 2px solid #155db0;
+    border-radius: 60%;
+}
+.fa-brands{
+    top: 4%;
+}
+.service_icon .font>a{
+    text-decoration: none;
+    color: #155db0;
+    margin: 0px 10px 0px;
+    position: absolute;
+    left: 20%;
+}
+.about{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #155db0;
+    text-align: center;
+    padding: 2% 8%;
+    position: relative;
+}
+.about>div>.fa-solid{
+    margin: 5%;
+    color: #fff;
+    padding: 5%;
+    font-size: 2rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.about>div>h1{
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0% 0% 10%;
+}
+.about>div>h1::after{
+    content: "+";
+    font-size: 1.5rem;
+    position: absolute;
+    top: 52%;
+}
+.about>div>p{
+    color: #fff;
+}
+.port{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    padding: 4%;
+}
+.port .text_Port>h1{
+    color: #155db0;
+    padding: 0px 0px 10px;
+}
+.port .text_Port>h1::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 40px;
+    margin: 5px auto 0px;
+    background: #155db0;
+    border-radius: 5px;
+}
+.port .text_Port>p{
+    padding: 2% 20% 0%;
+}
+.footer{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    text-align: center;
+    position: relative;
+}
+.footer>nav .fa-solid{
+    color: #155db0;
+    font-size: 2.1rem;
+    position: absolute;
+    top: -74%;
+    left: 25.8%;
+}
+.footer>nav>ul{
+    list-style: none;
+}
+.footer>nav>ul>li{
+    display: inline-block;
+    padding: 0% 1% 3%;
+}
+.footer>nav>ul>li>a{
+    text-decoration: none;
+    color: #155db0;
+}
+.footer>nav>ul>li>.line::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: #155db0;
+    border-radius: 5px;
+}
+.footer>nav>ul>li>a::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    margin: auto;
+    background: #155db0;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.footer>nav>ul>li:hover a::after{
+    width: 100%;
+}
+.img{
+    
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 80vh;
+    min-width: 100vh;
+    position: absolute;
+    padding: 2% 0% 3% 8%;
+}
+.img>img{
+   height: 250px;
+   width: 350px;
+   object-fit: cover;
+   object-position: center;
+}

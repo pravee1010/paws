@@ -1,0 +1,85 @@
+@media(max-width: 768px){
+    body{
+        max-width: 100vh;
+        max-height: 100vh;
+    }
+header>nav>ul>li{
+    display: block;
+}
+header>nav>ul{
+    display: block;
+    position: absolute;
+    background-color: #1565C0;
+    height: 100vh;
+    width: 300px;
+    top: 0%;
+    right: -300px;
+    text-align: left;
+    z-index: 2;
+}
+header>nav>ul .fa-xmark{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+header>nav .fa-bars{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5%;
+    right: 0%;
+}
+
+.text-box>h1{
+    font-size: 35px;
+}
+.text-box>a{
+    font-size: 0.8rem;
+}
+.container1{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+}
+.service .service_icon{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+.service .service_icon .font{
+    background-color: #ddd;
+    margin: 20px;
+    position: relative;
+    padding: 20px;
+    height: 50px;
+}
+.service .service_icon .fa-solid, .fa-brands{
+    font-size: 1rem;
+    padding: 5%;
+}
+.service_icon .font>a{
+    text-decoration: none;
+    color: #1565C0;
+    font-size: 0.6rem;
+    margin: 0px 10px 0px;
+    position: absolute;
+    left: 20%;
+    text-align: justify;
+}
+.about{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.img>div{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
